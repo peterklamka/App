@@ -61,6 +61,7 @@ const TextLink = (props) => {
             style={[styles.link, ...additionalStyles]}
             accessibilityRole="link"
             href={props.href}
+            onMouseDown={openLink}
             onPress={openLink}
             onKeyDown={openLinkIfEnterKeyPressed}
         >
